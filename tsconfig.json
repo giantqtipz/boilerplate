@@ -1,17 +1,17 @@
 {
-    "compilerOptions": {
-      "target": "esnext",
-      "module": "commonjs",
-      "lib": ["dom", "es7", "es2017"],
-      "allowJs": true,
-      "jsx": "react",
-      "outDir": "./js",
-      "rootDir": "./client",
-      "strict": true,
-      "types": ["node"],
-      "esModuleInterop": true,
-      "skipLibCheck": true,
-      "forceConsistentCasingInFileNames": true
-    },
-    "include": ["client/**/*"]
-  }
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "lib": ["dom", "es7", "es2017"],
+    "allowJs": true,
+    "jsx": "react",
+    "outDir": "./js",
+    "rootDirs": ["./client", "./tests"],
+    "strict": true,
+    "types": ["node", "jest"],
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["client/**/*", "tests/**/*"]
+}
